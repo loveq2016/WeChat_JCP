@@ -1,0 +1,107 @@
+<import src="../../wxParse/wxParse.wxml"/>
+<view  class="contain">
+<!--讲师基本信息-->
+<view   class="top">
+
+   <image src="{{teacherD.HeadFace}}"></image>
+   <view   class="tName">
+    <text>{{teacherD.NickName}}</text>
+   </view>
+   <view  class="info">
+     <image  class="im1" mode="scaleToFill" src="../../img/rq.png"></image>
+     <text>人气{{teacherD.LiveRenQiXuLi}}</text>
+     <text class="line">|</text>
+     <image  class="im1" mode="scaleToFill" src="../../img/attention.png"></image>
+     <text>关注{{teacherD.Fans}}</text>
+   </view>
+
+
+</view>
+<!--讲师详细信息-->
+
+<view  class="bottom">
+<view   class="topArray">
+<view   bindtap="click_jj">
+<text  style="color:{{color1}}">简介</text>
+</view>
+<view  bindtap="click_gd">
+<text style="color:{{color2}}">观点</text>
+</view>
+</view>
+
+
+<!--讲师简介-->
+<view wx:if="{{isJJ}}"  class="tInfo">
+<view  class="itemV">
+<view class="nv">
+<text  class="name" >职位</text>
+</view>
+<view class="vv">
+<text class="vale"  id="v1">{{teacherD.TouXian}}</text>
+</view>
+</view>
+<view class="itemV">
+<view class="nv">
+<text class="name">加入时间</text>
+</view>
+<view class="vv">
+<text class="vale">{{time}}</text>
+</view>
+</view>
+<view class="itemV">
+<view class="nv">
+<text class="name">名师简介</text>
+</view>
+<view class="vv">
+<!--<text class="vale">{{teacherD.Jianjie}}</text>-->
+<template is="wxParse" data="{{wxParseData}}"/>
+</view>
+</view>
+<view class="itemV">
+<view class="nv">
+<text class="name">个人公告</text>
+</view>
+<view class="vv">
+<text class="vale">{{teacherD.Notice}}</text>
+</view>
+</view>
+<view class="itemV">
+<view class="nv">
+<text class="name">擅长领域</text>
+</view>
+<view class="vv">
+<text class="vale">{{teacherD.ShanChang}}</text>
+</view>
+</view>
+</view>
+
+
+<!--讲师观点-->
+<view    wx:if="{{isGd}}" class="tInfo">
+
+<view  class="itemV" wx:for="{{ideaArray}}" data-id="{{item.Id}}"    bindtap="idea_click">
+<view class="nv">
+<text  class="date" >{{item.LogDate}}</text>
+</view>
+<view class="vv">
+<text class="ideaTitle" >{{item.Title}}</text>
+<view class="dv">
+<text class="ideaDesc">{{item.Bodys}}</text>
+</view>
+</view>
+</view>
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+</view>
+</view>

@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class="container">
+<view catchtap="toSearch"    class="sv">
+<text  class="sb" >搜索</text>
+<!--<input  type="text" placeholder="搜索"  placeholder-class="searchHolder"/> -->
+</view>
+
+<view  class="teacherArray"   >
+<view class="top" wx:for="{{teachersArray}}"  data-id="{{item.Id}}"  bindtap="toDetail" >
+<view   class='teacherImg'>
+  <image src="{{item.HeadFace}}"></image>
+</view>
+<view class="strInfo">
+<view class="inf">
+<view  class='teacherName'>
+<text  >{{item.NickName}}</text>
+</view>
+<view class="leavel">
+<text  >{{item.TouXian}}</text>
+</view>
+</view>
+<view  class="plain">
+{{item.Notice}}
+</view>
+<view  class="line">
+</view>
+</view>
+
+</view>
+</view>
+  
+</view>

@@ -1,0 +1,51 @@
+/* pages/index/ideaDetail.wxss */
+/*@import "../../wxParse/wxParse.wxss";*/
+page{
+    width: 100%;
+}
+.descV image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 250rpx;
+    margin-left: 50rpx;
+}
+.iTitle{
+    font-family: "微软雅黑";
+    font-size: 45rpx;
+    color: #222222;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.tV{
+    text-align: center;
+    margin-top: 30rpx;
+}
+.descV{
+    display: flex;
+    margin-top: 20rpx;
+}
+.descV .tName{
+    margin-left: 10rpx;
+    margin-top: 20rpx;
+    font-family: "微软雅黑";
+    font-size: 30rpx;
+    color: #AAAAAA
+}
+.descV .pDate{
+    margin-left: 10rpx;
+    margin-top: 20rpx;
+     font-family: "微软雅黑";
+      font-size: 30rpx;
+      color: #AAAAAA
+}
+.body{
+    padding: 10rpx;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    color: #555555;
+     font-family: "微软雅黑";
+      font-size: 32rpx;
+      letter-spacing: 5rpx;
+      line-height: 1.5
+}

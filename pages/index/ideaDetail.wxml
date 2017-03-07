@@ -1,0 +1,21 @@
+<!--<import src="../../wxParse/wxParse.wxml"/>-->
+<view>
+<view  class="tV">
+<text class="iTitle">{{idea.Title}}</text>
+</view>
+  <view  class="descV">
+  <image src="{{idea.HeadFace}}"></image>
+  <text  class="tName">{{item.TearchName}}</text>
+  <text  class="pDate">{{time}}</text>
+  </view>
+<view  class="body">
+{{idea.Bodys}}
+
+<!--<template is="wxParse" data="{{wxParseData}}"/>-->
+</view>
+
+
+
+
+
+</view>

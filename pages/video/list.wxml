@@ -1,0 +1,46 @@
+<!--视频列表-->
+<view class="typeInfo">
+   <scroll-view class='videoSv' scroll-x>
+    <text size="mini" class="classStr"   >按分类</text>
+     <text  class="all"  data-id="{{0}}"  style="color:{{color1}};"  bindtap="class_click" data-index="{{-1}}" >全部</text>
+    <view class="classLab" wx:for="{{classArray}}"   wx:for-item='im' wx:for-index='i' data-index="{{i}}" data-id="{{im.Id}}"  bindtap="class_click" >
+      <text    style="color:{{im.color}};"  >{{im.TypeTitle}}</text>
+  </view>
+  </scroll-view>
+</view>
+<view class="typeInfo">
+  <scroll-view class='videoSv' scroll-x>
+   <text  size="mini" class="classStr"   >按类型</text>
+    <text  class="all"    data-id="{{im.Id}}"  style="color:{{color2}};"  bindtap="type_click" data-index="{{-1}}">全部</text>
+   <view class="classLab" wx:for="{{typeArray}}"   wx:for-item='im' wx:for-index='i'  data-index="{{i}}" data-id="{{im.Id}}"   bindtap="type_click" >
+    <text  style="color:{{im.color}};"  >{{im.Title}}</text>
+  </view>
+  </scroll-view>
+</view>
+<view class="typeInfo">
+  <scroll-view class='videoSv' scroll-x>
+   <text  size="mini" class="classStr"   >按讲师</text>
+    <text   class="all"   data-id="{{im.id}}"  style="color:{{color3}};"  bindtap="teacher_click" data-index="{{-1}}">全部</text>
+  <view class="classLab" wx:for="{{teacherArray}}"   wx:for-item='im' wx:for-index='i'  bindtap="teacher_click"data-index="{{i}}" data-id="{{im.Id}}" data-id="{{im.Id}}"   >
+      <text   style="color:{{im.color}};" >{{im.NickName}}</text>
+  </view>
+   </scroll-view>
+</view>
+
+
+  <view  wx:for="{{videoArray}}"  class="videoItem"  data-id="{{item.Id}}" bindtap="video_click">
+  <view>
+  <image src="{{item.ImagesUrl}}"></image>
+  </view>
+  <view class="videoTitle" >
+    <text>{{item.Title}}</text>
+  </view>
+  <view class="videoDesc" >
+    <text>{{item.Description}}</text>
+  </view>
+  </view>
+
+
+
+
+  

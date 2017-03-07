@@ -1,0 +1,170 @@
+/* pages/index/search.wxss */
+input{
+    border: #cccccc solid 1rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    background: #f1f1f1;
+    margin-top: 20rpx;
+    border-radius: 10rpx;
+    padding: 10rpx;    
+    color: #999999;
+    font-size: 30rpx;
+    font-family: "微软雅黑"
+}
+.intHolder{
+    font-size: 30rpx;
+    color: #999999;  
+     font-family: "微软雅黑"
+}
+.hs{
+    margin-top: 15rpx;
+}
+.st{
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    padding: 15rpx;
+    border-bottom: 1rpx #E8E8E8 solid;
+}
+.hisLab{
+    margin-left: 20rpx;
+    font-size: 30rpx;
+     color: #999999;
+     font-family: "微软雅黑"
+}
+.historyV{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rpx;
+    margin-top: 15rpx;
+    font-family: "微软雅黑"
+}
+.historyV text{
+    font-size: 35rpx;
+    padding: 10rpx;
+    color: #999999;
+    font-family: "微软雅黑";
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx #E8E8E8 solid;
+}
+.hotLab{
+    margin-top: 50rpx;
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: #999999;
+}
+.histLab{
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+    font-size: 30rpx;
+    color: #999999;
+}
+.index{
+    margin-top: 10rpx;
+    font-family: "微软雅黑";
+    color: #999999
+}
+.hotName{
+    margin-left: 80rpx;
+    font-family: "微软雅黑";
+    text-align: left;
+    color: #555555;
+}
+
+.top image{
+  width: 100%;
+  height: 100%;
+  margin-top: 10rpx;
+}
+.teacherArray{
+  width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.top{
+  background: #F8F8F8;
+  width: 50%;
+  margin-top: 10rpx;
+  font-family: '微软雅黑'
+}
+.teacherName,.leavel,.plain{
+  margin-left: 10rpx;
+   font-size: 25rpx;
+   letter-spacing: 3rpx;
+}
+.teacherName{
+   color: #BB885A;
+   font-size: 30rpx;
+   font-weight: bold;
+}
+.leavel{
+  color: #999999;
+  white-space: nowrap;
+  width: 150rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 10rpx;
+}
+
+.plain{
+  margin-right: 50rpx;
+  margin-top: 5rpx;
+  height: 30rpx;
+  width: 350rpx;
+  color: #999999;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 30rpx
+}
+.strInfo{
+  background: white;
+  margin-top: 15rpx;
+}
+.teacherImg{
+  width: 350rpx;
+  height: 350rpx;
+  margin: auto;
+}
+.ts{
+    margin-top: 10rpx;
+    margin-left: 10rpx;
+}
+.tb{
+    margin-top: 20rpx;
+    margin-left: 10rpx;
+    background: #B88252;
+    width: 80rpx;
+    padding: 8rpx;
+    font-size: 30rpx;
+    color: white;
+    font-family: '微软雅黑';
+    font-weight: 300;
+    text-align: center
+}
+.videoItem image{
+    width: 100%;
+    height: 240rpx;
+}
+.videoItem{
+    margin-top: 20rpx;
+    float: left;
+    width: 45.5%;
+    margin-left: 3%;
+     font-family: '微软雅黑';
+}
+.videoTitle{
+    font-size: 30rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.videoDesc{
+ margin-left: 10rpx;
+ font-size: 25rpx;
+ margin-top: 5rpx;
+ color: #ccc;
+ white-space: nowrap;
+ max-width: 300rpx;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}

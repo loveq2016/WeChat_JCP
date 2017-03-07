@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/video/video",
+    "pages/video/player",
+    "pages/video/list",
+    "pages/test/test",
+    "pages/my/my",
+    "pages/index/search",
+    "pages/index/teacherDetail",
+    "pages/index/ideaDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0c0c0c",
+    "navigationBarTitleText": "聚财盆",
+    "navigationBarTextStyle":"#ffffff"
+      },
+  "tabBar": {
+    "color":  "#555555",
+    "selectedColor": "#b88252",
+    "borderStyle": "white",
+    "position":"bottom",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "img/reco01.png",
+      "selectedIconPath": "img/reco.png"
+    },
+    {
+      "pagePath": "pages/video/video",
+      "text": "视频",
+      "iconPath": "img/video01.png",
+      "selectedIconPath": "img/video.png"
+    }
+    ]
+  },
+  "networkTimeout": {
+    "request": 20000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

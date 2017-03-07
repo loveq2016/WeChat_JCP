@@ -1,0 +1,24 @@
+<view class="container">
+<video src="{{videoObj.LiveUrlM3u8}}" autoplay  >
+</video>
+
+
+<view class="hg"  wx:for="{{typeList}}"  data-id="{{item.Id}}">
+<view   class="ms">
+  <text   id="videoClass">{{item.TypeTitle}}</text>
+  <text id="videoMore" data-ids="{{1}}" bindtap='clickMore'>更多>></text>
+</view>
+  <view  wx:for="{{item.VideoData}}"  class="videoItem"  bindtap="video_click" wx:for-index="j" wx:for-item="im" data-id="{{im.Id}}">
+  <view class="v1">
+  <image src="{{im.ImagesUrl}}"></image>
+  </view>
+  <view class="videoTitle">
+    <text>{{im.Title}}</text>
+  </view>
+  <view class="videoDesc">
+    <text>{{im.Description}}</text>
+</view>
+  </view>
+</view>
+
+</view>

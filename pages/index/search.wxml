@@ -1,0 +1,82 @@
+<view   class="contain">
+
+<input  type="text" placeholder="请输入视频名称或讲师名称"  placeholder-class="intHolder"  bindconfirm="onFinish"/>
+
+
+<!--热门记录、搜索记录-->
+<view class="histLab">
+<text  class="hisLab">历史记录</text>
+</view>
+<view  wx:if="{{isSearch}}" class="hs">
+<view  class="historyV" >
+<view  wx:for='{{historyList}}' wx:if='{{index<5}}' bindtap='clickHis' data-name='{{item.value}}'>
+  <text>{{item.value}}</text>
+</view>
+</view>
+
+
+<view class="hotLab">
+  <text  class="hisLab">热门搜索</text>
+</view>
+<view  wx:for="{{teacherHotList}}" wx:for-index="i" class="st" bindtap='search_teacher'  data-name='{{item.Name}}'>
+<text  class="index" style='color:{{item.color}}'>{{i+1}}</text>
+<text class="hotName">{{item.Name}}</text>
+</view>
+<view  wx:for="{{videoHotList}}" wx:for-index="i" class="st" bindtap='search_teacher'  data-name='{{item.Name}}'>
+<text  class="index" style='color:{{item.color}}'>{{i+1+teacherHotList.length}}</text>
+<text class="hotName">{{item.Name}}</text>
+</view>
+</view>
+
+<!--搜索结果展示-->
+
+<view   class="ts" wx:if="{{isLoad}}">
+<view  class="tb">
+<text>讲师</text>
+</view>
+<view  class="teacherArray">
+<view class="top" wx:for="{{teacherArray}}"  data-id="{{item.Id}}"  bindtap="toDetail" >
+<view   class='teacherImg'>
+  <image src="{{item.HeadFace}}"></image>
+</view>
+<view class="strInfo">
+<view class="inf">
+<text   class='teacherName'>{{item.NickName}}</text>
+<text  class="leavel">{{item.TouXian}}</text>
+</view>
+<view  class="plain">
+{{item.Notice}}
+</view>
+<view  class="line">
+</view>
+</view>
+
+</view>
+</view>
+</view>
+
+<view wx:if="{{isLoad}}" class="ts">
+<view  class="tb">
+  <text>视频</text>
+  </view>
+ <view  wx:for="{{videoArray}}"  class="videoItem" data-id="{{item.Id}}" bindtap="video_click">
+  <view class="v1">
+  <image src="{{item.ImagesUrl}}"></image>
+  </view>
+  <view class="videoTitle">
+    <text>{{item.Title}}</text>
+  </view>
+  <view class="videoDesc">
+    <text>{{item.Description}}</text>
+  </view>
+</view>
+
+</view>
+
+
+
+
+
+
+
+</view>

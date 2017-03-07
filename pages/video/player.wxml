@@ -1,0 +1,33 @@
+<view class="con">
+  <video src="{{videoObj.VideoPageUrl}}" controls autoplay objectFit="fill">
+  </video>
+  <scroll-view>
+    <view class="top">
+      <view class="title">
+        <text>{{videoObj.Title}}</text>
+      </view>
+      <view class="bfNum">
+        <text>{{videoObj.PlayXNCount}}次播放</text>
+      </view>
+    </view>
+    <view class="hg" wx:for="{{typeList}}">
+      <view class="ms">
+        <text id="videoClass">{{item.TypeTitle}}</text>
+        <text id="videoMore" data-ids="{{item.Id}}" bindtap='clickMore'>更多>></text>
+      </view>
+      <view wx:for="{{item.VideoData}}" class="videoItem" data-id="{{im.Id}}" bindtap="video_click" wx:for-index='j' wx:for-item="im">
+        <view class="v1">
+          <image src="{{im.ImagesUrl}}"></image>
+        </view>
+        <view class="videoTitle">
+          <text>{{im.Title}}</text>
+        </view>
+        <view class="videoDesc">
+          <text>{{im.Description}}</text>
+        </view>
+      </view>
+    </view>
+    <view>
+    </view>
+  </scroll-view>
+</view>

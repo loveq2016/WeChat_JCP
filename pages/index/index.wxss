@@ -1,0 +1,86 @@
+/**index.wxss**/
+page{
+  overflow-x: hidden;
+  width: 100%;
+  
+}
+.teacherImg{
+  width: 350rpx;
+  height: 350rpx;
+  margin: auto;
+}
+.inf{
+  margin-top: 20rpx;
+  display: flex;
+}
+
+.top image{
+  width: 100%;
+  height: 100%;
+  margin-top: 10rpx;
+}
+.teacherArray{
+  width: 100%;
+  margin-top: 10rpx;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.top{
+  padding-top: 15rpx;
+  background: #F8F8F8;
+  width: 50%;
+  margin-top: 20rpx;
+  font-family: '微软雅黑'
+}
+.teacherName,.leavel,.plain{
+  margin-left: 10rpx;
+   font-size: 25rpx;
+   letter-spacing: 3rpx;
+}
+.teacherName{
+   color: #BB885A;
+   font-size: 30rpx;
+   font-weight: bold;
+}
+.leavel{
+  color: #999999;
+  white-space: nowrap;
+  width: 150rpx;
+  overflow: hidden;
+  margin-top: 10rpx;
+  text-overflow: ellipsis;
+}
+
+.plain{
+  margin-right: 50rpx;
+  margin-top: 5rpx;
+  height: 30rpx;
+  width: 350rpx;
+  color: #999999;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 30rpx
+}
+.strInfo{
+  background: white;
+  margin-top: 15rpx;
+}
+
+
+.sv{
+  margin-top: 20rpx;
+  border: #cccccc solid 1rpx;
+  padding: 5px 15rpx;
+  text-align: center;
+  background: #f1f1f1;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+}
+.sb{
+  line-height: 45rpx;
+   color: #999999;
+   font-size: 30rpx;
+
+}
